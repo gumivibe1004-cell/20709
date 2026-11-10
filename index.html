@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>2학년 7반 김지한 홈페이지 - 이공계 고등학생을 위한 아이디어 공간</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <div class="brand">2학년 7반 김지한 홈페이지 - 이공계 고등학생을 위한 아이디어 공간</div>
+
+    <div class="sub">진로 아이디어 · 학습 메모 · 프로젝트 팁을 한눈에</div>
+
+  </header>
+
+  <main class="cards" id="cards">
+
+    <section class="card" data-tab="career">
+
+      <div class="card-head">
+
+        <span class="card-icon">
+
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+
+            <path d="M3 17l6-6 4 4 8-8"/>
+
+            <path d="M3 13l6-6 4 4 8-8"/>
+
+          </svg>
+
+        </span>
+
+        <div class="card-title">
+
+          <h2>진로 아이디어</h2>
+
+          <span class="tag">이공계 직업 탐색</span>
+
+        </div>
+
+      </div>
+
+      <div class="card-body">
+
+        <div class="note">
+
+          <p>어떤 직업을 탐색하고 싶은지 적어두면 좋습니다.</p>
+
+          <ul>
+
+            <li>기계·로봇·자동화: 설계, 움직임의 제어</li>
+
+            <li>화학·소재·에너지: 공정, 재료, 배터리</li>
+
+            <li>생명·보건·바이오: 실험, 연구, 진단</li>
+
+          </ul>
+
+          <p class="card-depts">관련 학과 예시: 기계공학과, 화학공학과, 생명과학과, 의생명계열 등</p>
+
+        </div>
+
+        <div class="hint">진로 탐색은 “좋아하는 것 + 잘하는 것 + 세상 문제”를 같이 보는 데서 시작합니다.</div>
+
+      </div>
+
+    </section>
+
+    <section class="card" data-tab="study">
+
+      <div class="card-head">
+
+        <span class="card-icon">
+
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+
+            <path d="M4 6h16M4 12h10M4 18h6"/>
+
+          </svg>
+
+        </span>
+
+        <div class="card-title">
+
+          <h2>학습 노트</h2>
+
+          <span class="tag">물리·수학·화학 정리</span>
+
+        </div>
+
+      </div>
+
+      <div class="card-body">
+
+        <div class="note">
+
+          <p>공부하다 헷갈린 개념, 문제 풀이 포인트, 공식 유래를 짧게 남겨두세요.</p>
+
+          <ul>
+
+            <li>물리: 운동 방정식, 힘의 분해, 에너지 보존</li>
+
+            <li>수학: 함수 그래프, 미적분 직관, 증명 패턴</li>
+
+            <li>화학: 반응식, 몰 개념, 평형</li>
+
+          </ul>
+
+        </div>
+
+        <div class="hint">노트는 “정답”보다 “어디서 막혔는지”를 남기는 쪽이 나중에 더 도움이 됩니다.</div>
+
+      </div>
+
+    </section>
+
+    <section class="card" data-tab="project">
+
+      <div class="card-head">
+
+        <span class="card-icon">
+
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+
+            <path d="M8 10h8M8 14h5"/>
+
+          </svg>
+
+        </span>
+
+        <div class="card-title">
+
+          <h2>프로젝트 팁</h2>
+
+          <span class="tag">수행평가·탐구 아이디어</span>
+
+        </div>
+
+      </div>
+
+      <div class="card-body">
+
+        <div class="note">
+
+          <p>수행평가나 작은 탐구 주제를 고를 때 참고할 수 있는 방향입니다.</p>
+
+          <ul>
+
+            <li>일상에서 관찰한 현상을 수식으로 설명해보기</li>
+
+            <li>간단한 실험 설계와 결과 기록</li>
+
+            <li>관심 분야를 다른 과목과 연결해보기</li>
+
+            <li>발표용 정리: 문제-방법-결과-의미</li>
+
+          </ul>
+
+        </div>
+
+        <div class="hint">주제는 “완벽한 아이디어”보다 “끝까지 해볼 수 있는 크기”로 잡는 것이 좋습니다.</div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <div class="content-shell" id="contentShell">
+
+    <div class="shell-card">
+
+      <div class="shell-head" id="shellHead">
+
+        <span class="shell-icon" id="shellIcon"></span>
+
+        <div class="shell-title">
+
+          <h3 id="shellTitle"></h3>
+
+          <span class="tag" id="shellTag"></span>
+
+        </div>
+
+      </div>
+
+      <div class="shell-body" id="shellBody">
+
+        <p class="shell-sub" id="shellSub"></p>
+
+        <div id="shellContent"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    <p>공부는 “많이”보다 “이어지는 느낌”이 중요합니다. 궁금한 걸 적어두고, 다음에 다시 꺼내보는 것만으로도 충분히 시작이 됩니다.</p>
+
+    <p>간단한 기능: 탭으로 카드 전환 / 작은 메모 저장(브라우저 내 저장) / 오늘 기록 남기기</p>
+
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+:root {
+
+  --bg: #f7f2ee;
+
+  --bg2: #fbf6f2;
+
+  --border: #e3dccb;
+
+  --ink: #2c2822;
+
+  --ink-soft: #5a524a;
+
+  --muted: #8a8074;
+
+  --accent: #2f6b7a;
+
+  --accent-soft: #d7e7e9;
+
+  --warm: #b9652a;
+
+  --warm-soft: #ecd6c2;
+
+  --green: #4a7a4e;
+
+  --green-soft: #d6e4d2;
+
+  --blue: #3c6699;
+
+  --blue-soft: #d2dcec;
+
+  --plum: #6b3b5a;
+
+  --plum-soft: #e7d6dd;
+
+}
+
+body {
+
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+
+  color: var(--ink);
+
+  background:
+
+    radial-gradient(circle at 12px 12px, rgba(0,0,0,0.04) 1px, transparent 1px),
+
+    var(--bg);
+
+  background-size: 22px 22px;
+
+  min-height: 100vh;
+
+}
+
+.topbar {
+
+  text-align: center;
+
+  padding: 2.4rem 1rem 1rem;
+
+}
+
+.brand {
+
+  font-size: 1.5rem;
+
+  font-weight: 600;
+
+  letter-spacing: -0.01em;
+
+}
+
+.sub {
+
+  color: var(--ink-soft);
+
+  font-size: 0.95rem;
+
+  margin-top: 0.3rem;
+
+}
+
+.cards {
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+
+  padding: 0 1rem 2rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+
+}
+
+.card {
+
+  background: var(--bg2);
+
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+
+  padding: 1rem 0.9rem 0.9rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  cursor: pointer;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+
+}
+
+.card:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 18px rgba(0,0,0,0.05);
+
+  border-color: var(--accent-soft);
+
+}
+
+.card.active {
+
+  border-color: var(--accent);
+
+  box-shadow: 0 0 0 2px var(--accent-soft);
+
+}
+
+.card-head {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.6rem;
+
+  margin-bottom: 0.7rem;
+
+}
+
+.card-icon {
+
+  width: 30px;
+
+  height: 30px;
+
+  flex-shrink: 0;
+
+  color: var(--accent);
+
+  background: var(--accent-soft);
+
+  border-radius: 9px;
+
+  padding: 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.card-icon svg {
+
+  width: 18px;
+
+  height: 18px;
+
+}
+
+.card-title h2 {
+
+  margin: 0;
+
+  font-size: 1.05rem;
+
+  line-height: 1.3;
+
+}
+
+.tag {
+
+  display: inline-block;
+
+  background: var(--ink-soft);
+
+  color: #fff;
+
+  font-size: 0.68rem;
+
+  padding: 0.2rem 0.55rem;
+
+  border-radius: 999px;
+
+  margin-top: 0.25rem;
+
+  letter-spacing: 0.01em;
+
+}
+
+.card.active .tag {
+
+  background: var(--accent);
+
+}
+
+.card-body {
+
+  flex: 1;
+
+}
+
+.note {
+
+  background: rgba(120,110,100,0.05);
+
+  border: 1px dashed rgba(120,110,100,0.18);
+
+  border-radius: 10px;
+
+  padding: 0.7rem 0.8rem;
+
+  font-size: 0.9rem;
+
+}
+
+.note p {
+
+  margin: 0 0 0.4rem;
+
+  color: var(--ink);
+
+}
+
+.note ul {
+
+  margin: 0 0 0.4rem 1.1rem;
+
+  color: var(--ink-soft);
+
+  font-size: 0.86rem;
+
+  line-height: 1.5;
+
+}
+
+.note .card-depts {
+
+  margin-top: 0.5rem;
+
+  font-size: 0.82rem;
+
+  color: var(--accent);
+
+  background: var(--accent-soft);
+
+  padding: 0.3rem 0.6rem;
+
+  border-radius: 6px;
+
+  line-height: 1.45;
+
+}
+
+.hint {
+
+  margin-top: 0.7rem;
+
+  font-size: 0.82rem;
+
+  color: var(--muted);
+
+  line-height: 1.45;
+
+}
+
+.content-shell {
+
+  max-width: 1080px;
+
+  margin: 0 auto 2rem;
+
+  padding: 0 1rem 2rem;
+
+  display: none;
+
+}
+
+.content-shell.visible {
+
+  display: block;
+
+}
+
+.shell-card {
+
+  background: #fff;
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+}
+
+.shell-head {
+
+  display: flex;
+
+  gap: 0.7rem;
+
+  align-items: center;
+
+  background: var(--accent);
+
+  color: #fff;
+
+  padding: 0.9rem 1.1rem;
+
+}
+
+.shell-icon {
+
+  width: 36px;
+
+  height: 36px;
+
+  flex-shrink: 0;
+
+  background: rgba(255,255,255,0.25);
+
+  border-radius: 10px;
+
+  padding: 6px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.shell-icon svg {
+
+  width: 22px;
+
+  height: 22px;
+
+}
+
+.shell-title h3 {
+
+  margin: 0;
+
+  font-size: 1.15rem;
+
+}
+
+.shell-title .tag {
+
+  background: rgba(255,255,255,0.25);
+
+  color: #fff;
+
+}
+
+.shell-body {
+
+  padding: 1.1rem 1.2rem 1.3rem;
+
+  background: var(--bg2);
+
+}
+
+.shell-sub {
+
+  color: var(--ink-soft);
+
+  margin: 0 0 0.9rem;
+
+  font-size: 0.94rem;
+
+}
+
+#shellContent p,
+
+#shellContent li {
+
+  color: var(--ink);
+
+  font-size: 0.96rem;
+
+  line-height: 1.6;
+
+}
+
+#shellContent ul {
+
+  margin: 0 0 0.7rem 1.1rem;
+
+}
+
+.shell-content-inner {
+
+  background: #fff;
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  padding: 0.8rem 1rem;
+
+  margin-top: 0.4rem;
+
+}
+
+#shellContent .career-list {
+
+  margin: 0 0 1rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+
+}
+
+#shellContent .career-item {
+
+  background: #fff;
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  padding: 0.8rem 1rem;
+
+}
+
+#shellContent .career-item h4 {
+
+  margin: 0 0 0.4rem;
+
+  font-size: 1rem;
+
+  color: var(--accent);
+
+}
+
+#shellContent .career-item ul {
+
+  margin: 0;
+
+  padding-left: 1.1rem;
+
+  color: var(--ink-soft);
+
+  font-size: 0.9rem;
+
+  line-height: 1.55;
+
+}
+
+#shellContent .career-item li {
+
+  margin-bottom: 0.25rem;
+
+}
+
+#shellContent .career-item .dept-box {
+
+  margin-top: 0.5rem;
+
+  font-size: 0.84rem;
+
+  color: var(--ink-soft);
+
+  background: var(--bg2);
+
+  border: 1px dashed var(--border);
+
+  border-radius: 6px;
+
+  padding: 0.4rem 0.7rem;
+
+  line-height: 1.5;
+
+}
+
+#shellContent .career-item .dept-box strong {
+
+  color: var(--ink);
+
+}
+
+.shell-content-inner textarea {
+
+  width: 100%;
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  padding: 0.55rem 0.7rem;
+
+  font-size: 0.92rem;
+
+  font-family: inherit;
+
+  resize: vertical;
+
+  background: #fff;
+
+}
+
+.shell-content-inner textarea:focus {
+
+  outline: 2px solid var(--accent-soft);
+
+  border-color: var(--accent);
+
+}
+
+.shell-content-inner .btn-row {
+
+  display: flex;
+
+  gap: 0.5rem;
+
+  margin-top: 0.6rem;
+
+  flex-wrap: wrap;
+
+}
+
+.shell-content-inner button {
+
+  background: var(--accent);
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 0.45rem 0.9rem;
+
+  font-size: 0.85rem;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+}
+
+.shell-content-inner button.ghost {
+
+  background: transparent;
+
+  color: var(--ink);
+
+  border: 1px solid var(--border);
+
+}
+
+.shell-content-inner button:disabled {
+
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+}
+
+.entered-note {
+
+  background: var(--accent-soft);
+
+  border-left: 3px solid var(--accent);
+
+  padding: 0.6rem 0.9rem;
+
+  border-radius: 6px;
+
+  margin-top: 0.5rem;
+
+  font-size: 0.92rem;
+
+}
+
+.entered-note .meta {
+
+  font-size: 0.78rem;
+
+  color: var(--ink-soft);
+
+  margin-top: 0.25rem;
+
+}
+
+.one-liner {
+
+  color: var(--ink);
+
+  font-size: 1rem;
+
+  line-height: 1.55;
+
+  min-height: 1.4em;
+
+}
+
+footer {
+
+  text-align: center;
+
+  padding: 1.5rem 1rem 2.5rem;
+
+  color: var(--muted);
+
+  font-size: 0.85rem;
+
+  line-height: 1.6;
+
+}
+
+footer p + p {
+
+  margin-top: 0.4rem;
+
+}
+
+.hero-img {
+
+  display: none;
+
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: 1rem auto 0;
+
+  border-radius: 12px;
+
+  object-fit: cover;
+
+  background: #fff;
+
+}
+
+@media (max-width: 760px) {
+
+  .cards {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+(function () {
+
+  const cards = document.querySelectorAll(".cards .card");
+
+  const shell = document.getElementById("contentShell");
+
+  const shellIcon = document.getElementById("shellIcon");
+
+  const shellTitle = document.getElementById("shellTitle");
+
+  const shellTag = document.getElementById("shellTag");
+
+  const shellSub = document.getElementById("shellSub");
+
+  const shellContent = document.getElementById("shellContent");
+
+  const heroImg = document.createElement("img");
+
+  heroImg.alt = "이공계 고등학생을 위한 공간";
+
+  heroImg.className = "hero-img";
+
+  function loadHeroImage() {
+
+    const img = new Image();
+
+    img.onload = function () {
+
+      heroImg.src = "image.webp";
+
+      heroImg.style.display = "block";
+
+    };
+
+    img.onerror = function () {
+
+      heroImg.style.display = "none";
+
+      heroImg.removeAttribute("src");
+
+    };
+
+    img.src = "image.webp";
+
+  }
+
+  const tabData = {
+
+    career: {
+
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+
+        <path d="M3 17l6-6 4 4 8-8"/>
+
+        <path d="M3 13l6-6 4 4 8-8"/>
+
+      </svg>`,
+
+      title: "진로 아이디어 — 이공계 직군 3개",
+
+      tag: "이공계 직업 탐색",
+
+      sub: "관심 직군을 누르면, 어떤 일을 하고 어떤 학과와 연결되는지 더 자세히 볼 수 있습니다.",
+
+      inner: `
+
+        <div class="career-list">
+
+          <div class="career-item">
+
+            <h4>1. 기계·로봇·자동화</h4>
+
+            <ul>
+
+              <li>움직이는 장치·구조물을 설계하고, 힘·진동·열·재료가 실제 작동에 어떻게 영향을 주는지 다룹니다.</li>
+
+              <li>자동차, 로봇, 생산설비, 에너지 장비, 의료기기처럼 “물리적으로 움직이는 것”과 자주 연결됩니다.</li>
+
+              <li>잘하면 좋은 것: 그림으로 구조를 이해하는 힘, 수치와 단위를 다루는 습관, 실패 원인을 하나씩 좁혀가는 태도</li>
+
+            </ul>
+
+            <div class="dept-box">
+
+              <strong>관련 학과 예시:</strong>
+
+              기계공학과, 기계시스템공학과, 로봇공학과, 자동차공학과, 메카트로닉스공학, 항공우주공학, 정밀기계공학과 등
+
+            </div>
+
+          </div>
+
+          <div class="career-item">
+
+            <h4>2. 화학·소재·에너지</h4>
+
+            <ul>
+
+              <li>재료를 만들고, 반응을 조절하고, 공정을 안전하고 효율적으로 운영하는 쪽을 다룹니다.</li>
+
+              <li>배터리, 반도체 공정, 플라스틱·소재, 식품·의약품, 환경 처리처럼 “물질의 변화와 생산”과 연결됩니다.</li>
+
+              <li>잘하면 좋은 것: 반응식·몰 같은 기본 개념을 상황으로 바꾸는 힘, 조건을 바꾸면 결과가 어떻게 달라지는지 보는 눈</li>
+
+            </ul>
+
+            <div class="dept-box">
+
+              <strong>관련 학과 예시:</strong>
+
+              화학공학과, 재료공학과, 신소재공학과, 고분자공학과, 에너지공학과, 배터리·반도체 관련 전공, 환경공학·화학 관련 학과 등
+
+            </div>
+
+          </div>
+
+          <div class="career-item">
+
+            <h4>3. 생명·보건·바이오</h4>
+
+            <ul>
+
+              <li>세포, 몸, 질병, 유전자, 생태 같은 생명 현상을 관찰하고 해석합니다. 실험과 데이터 해석이 많이 들어갑니다.</li>
+
+              <li>실험실 연구, 진단·보건, 바이오 소재, 환경·생명 모니터링 같은 방향과 이어질 수 있습니다.</li>
+
+              <li>잘하면 좋은 것: 관찰한 것을 빠짐없이 기록하는 습관, 결과와 예외를 구분해서 보는 힘, 생소한 용어를 천천히 정리하는 태도</li>
+
+            </ul>
+
+            <div class="dept-box">
+
+              <strong>관련 학과 예시:</strong>
+
+              생명과학과, 생물학과, 생명공학과, 의생명/바이오계열, 간호·보건 계열, 식품영양/제약 관련 전공, 환경·생태 관련 학과 등
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="shell-content-inner">
+
+          <p>직군을 볼 때는 학과 이름만 보지 말고, 다음을 같이 보면 더 현실적입니다.</p>
+
+          <ul>
+
+            <li>무엇을 만들고/분석하고/고치는지</li>
+
+            <li>어떤 실험, 설계, 계산이 자주 나오는지</li>
+
+            <li>실제 현장에서 어떤 문제가 자주 나오는지</li>
+
+            <li>내가 오래 해도 덜 지루할 만한 요소가 있는지</li>
+
+          </ul>
+
+          <p>관심 직군을 하나 고른 뒤에는, 그 직군이 다루는 문제를 작은 예시로 한 번 그려보면 방향이 더 잘 잡힙니다.</p>
+
+        </div>`
+
+    },
+
+    study: {
+
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+
+        <path d="M4 6h16M4 12h10M4 18h6"/>
+
+      </svg>`,
+
+      title: "학습 노트 — 개념 정리 팁",
+
+      tag: "물리·수학·화학 정리",
+
+      sub: "공식만 외우기보다, 어떤 상황에서 왜 쓰는지 함께 적어두면 다시 꺼내기 쉽습니다.",
+
+      inner: `
+
+        <div class="shell-content-inner">
+
+          <p>노트에 남기면 좋은 것</p>
+
+          <ul>
+
+            <li>공식이 나오는 맥락: 언제 쓰는지, 어떤 가정이 숨어 있는지</li>
+
+            <li>유형별로 헷갈리는 지점: 비슷한데 다른 케이스</li>
+
+            <li>문제 풀이에서 자주 막히는 단계</li>
+
+            <li>한 줄 요약: 이 개념을 한 문장으로 말하면?</li>
+
+          </ul>
+
+          <p>예) 물리에서 “힘의 분해”는 그림을 먼저 그리고 축부터 잡는 쪽이 덜 헷갈립니다.</p>
+
+        </div>`
+
+    },
+
+    project: {
+
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+
+        <path d="M8 10h8M8 14h5"/>
+
+      </svg>`,
+
+      title: "프로젝트·수행평가 아이디어",
+
+      tag: "수행평가·탐구 아이디어",
+
+      sub: "주제는 크게보다 끝까지 할 수 있는 크기로 잡는 게 좋습니다.",
+
+      inner: `
+
+        <div class="shell-content-inner">
+
+          <p>시작하기 쉬운 방향</p>
+
+          <ul>
+
+            <li>주변에서 자꾸 보는 현상을 하나 골라 설명해보기</li>
+
+            <li>간단한 비교 실험: 조건을 하나 바꾸고 결과를 기록하기</li>
+
+            <li>관심사를 다른 과목과 연결하기 (예: 수학+물리, 화학+일상 제품)</li>
+
+            <li>발표 구조: 문제-방법-결과-의미 순서로 정리</li>
+
+          </ul>
+
+          <p>너무 멋진 주제보다, 자료·시간·실행 가능성이 있는 주제가 더 오래 갑니다.</p>
+
+        </div>`
+
+    }
+
+  };
+
+  function showTab(key) {
+
+    const data = tabData[key];
+
+    if (!data) return;
+
+    cards.forEach(function (c) {
+
+      c.classList.toggle("active", c.dataset.tab === key);
+
+    });
+
+    shellIcon.innerHTML = data.icon;
+
+    shellTitle.textContent = data.title;
+
+    shellTag.textContent = data.tag;
+
+    shellSub.textContent = data.sub;
+
+    shellContent.innerHTML = data.inner;
+
+    shell.classList.add("visible");
+
+  }
+
+  cards.forEach(function (card) {
+
+    card.addEventListener("click", function () {
+
+      showTab(card.dataset.tab);
+
+    });
+
+  });
+
+  function loadOneLiner() {
+
+    try {
+
+      return localStorage.getItem("eng_student_oneliner") || "";
+
+    } catch (e) {
+
+      return "";
+
+    }
+
+  }
+
+  function saveOneLiner(text) {
+
+    try {
+
+      localStorage.setItem("eng_student_oneliner", text);
+
+    } catch (e) {}
+
+  }
+
+  function clearOneLiner() {
+
+    try {
+
+      localStorage.removeItem("eng_student_oneliner");
+
+    } catch (e) {}
+
+  }
+
+  function showOneLiner(text) {
+
+    const display = document.getElementById("oneLinerDisplay");
+
+    if (!display) return;
+
+    const item = document.createElement("div");
+
+    item.className = "entered-note";
+
+    item.innerHTML = text + '<div class="meta">방금 저장됨</div>';
+
+    display.innerHTML = "";
+
+    display.appendChild(item);
+
+  }
+
+  showTab("career");
+
+  loadHeroImage();
+
+})();
